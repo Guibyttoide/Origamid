@@ -1,8 +1,15 @@
-$azul: #00aaff;
+@import "colors";
 
 div {
   background: $azul;
+  height: 200px;
+  width: 200px;
+  h1 {
+    color: $vermelho;
+  }
   a {
-    color: pink;
+    color: $branco;
+    background: $preto;
+    padding: 10px 20px;
   }
 }
