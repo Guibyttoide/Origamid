@@ -1,4 +1,4 @@
-$cor-primaria: blue;
+$cor-primaria: red;
 $font-primaria: monospace;
 $gutter: 60px;
 
@@ -17,6 +17,22 @@ $gutter: 60px;
   -webkit-box-sizing: border-box;
 }
 
+@mixin separador($color) {
+  &::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: $color;
+  }
+}
+
+@mixin box-shadow($shadow...) {
+  box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+}
+
 section {
   @include border-box;
   max-width: 600px;
@@ -24,12 +40,39 @@ section {
 }
 
 .modal {
-  h1.titulo {
+  section {
+    @include border-box;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .modal {
+    .titulo {
+      @include title-large;
+      @include separador(#84e);
+      color: $cor-primaria;
+      font-family: $font-primaria;
+      margin-bottom: $gutter;
+    }
+
+    p {
+      font: {
+        size: 1.2em;
+        family: $font-primaria;
+        style: italic;
+      }
+      line-height: 1.4;
+      max-width: 400px;
+    }
+  }
+  .titulo {
     @include title-large;
+    @include separador(#84e);
     color: $cor-primaria;
     font-family: $font-primaria;
     margin-bottom: $gutter;
   }
+
   p {
     font: {
       size: 1.2em;
@@ -62,7 +105,7 @@ ul {
       display: block;
       padding: 20px;
       text-decoration: none;
-      background: blue;
+      background: $cor-primaria;
       color: white;
       &:hover,
       &.active {
