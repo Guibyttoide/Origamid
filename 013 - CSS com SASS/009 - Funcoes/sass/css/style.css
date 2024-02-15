@@ -1,7 +1,9 @@
-div {
-  width: 42%;
+/* line 9, C:/Users/guiby/Documents/Projetos de Front-end/Origamid/Exercicios-das-aulas/013 - CSS com SASS/009 - Funcoes/sass/scss/style.scss */
+section {
+  width: 16.66667%;
 }
 
+/* line 52, C:/Users/guiby/Documents/Projetos de Front-end/Origamid/Exercicios-das-aulas/013 - CSS com SASS/009 - Funcoes/sass/scss/style.scss */
 section {
   max-width: 600px;
   margin: 0 auto;
@@ -10,24 +12,17 @@ section {
   -webkit-box-sizing: border-box;
 }
 
-.modal {
-  box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.5), 15px 15px 0 0 rgba(0, 0, 0, 0.5), 20px 20px 0 0 rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.5), 15px 15px 0 0 rgba(0, 0, 0, 0.5), 20px 20px 0 0 rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.5), 15px 15px 0 0 rgba(0, 0, 0, 0.5), 20px 20px 0 0 rgba(0, 0, 0, 0.5);
-}
-
+/* line 59, C:/Users/guiby/Documents/Projetos de Front-end/Origamid/Exercicios-das-aulas/013 - CSS com SASS/009 - Funcoes/sass/scss/style.scss */
 .modal h1 {
-  color: blue;
+  color: #88d;
   font-family: monospace;
   margin-bottom: 60px;
-  font-size: 4em;
-  font-weight: bold;
-  font-family: monospace;
-  line-height: 1;
+  font-size: 2.5rem;
 }
 
+/* line 27, C:/Users/guiby/Documents/Projetos de Front-end/Origamid/Exercicios-das-aulas/013 - CSS com SASS/009 - Funcoes/sass/scss/style.scss */
 .modal h1::after {
-  content: '';
+  content: "";
   display: block;
   width: 400px;
   height: 4px;
@@ -35,12 +30,14 @@ section {
 }
 
 @media (max-width: 600px) {
+  /* line 59, C:/Users/guiby/Documents/Projetos de Front-end/Origamid/Exercicios-das-aulas/013 - CSS com SASS/009 - Funcoes/sass/scss/style.scss */
   .modal h1 {
-    color: #84E;
+    color: #84e;
     font-size: 2em;
   }
 }
 
+/* line 70, C:/Users/guiby/Documents/Projetos de Front-end/Origamid/Exercicios-das-aulas/013 - CSS com SASS/009 - Funcoes/sass/scss/style.scss */
 .modal p {
   font-size: 1.2em;
   font-family: monospace;
@@ -50,43 +47,51 @@ section {
 }
 
 @media (max-width: 600px) {
+  /* line 70, C:/Users/guiby/Documents/Projetos de Front-end/Origamid/Exercicios-das-aulas/013 - CSS com SASS/009 - Funcoes/sass/scss/style.scss */
   .modal p {
-    font-size: .6em;
+    font-size: 0.6em;
   }
 }
 
+/* line 82, C:/Users/guiby/Documents/Projetos de Front-end/Origamid/Exercicios-das-aulas/013 - CSS com SASS/009 - Funcoes/sass/scss/style.scss */
 .modal a {
   display: block;
   max-width: 120px;
   padding: 10px;
   border-radius: 4px;
   text-align: center;
-  background: blue;
+  background: #88d;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-family: monospace;
 }
 
+/* line 96, C:/Users/guiby/Documents/Projetos de Front-end/Origamid/Exercicios-das-aulas/013 - CSS com SASS/009 - Funcoes/sass/scss/style.scss */
 ul {
   text-align: center;
 }
 
+/* line 98, C:/Users/guiby/Documents/Projetos de Front-end/Origamid/Exercicios-das-aulas/013 - CSS com SASS/009 - Funcoes/sass/scss/style.scss */
 ul li {
   display: inline-block;
   list-style: none;
-  font-size: 2.25em;
+  font-size: em(36);
 }
 
+/* line 102, C:/Users/guiby/Documents/Projetos de Front-end/Origamid/Exercicios-das-aulas/013 - CSS com SASS/009 - Funcoes/sass/scss/style.scss */
 ul li a {
   display: block;
   padding: 20px;
   text-decoration: none;
   background: blue;
   color: white;
-  font-size: 0.44444em;
+  font-size: em(16, 36);
 }
 
+/* line 109, C:/Users/guiby/Documents/Projetos de Front-end/Origamid/Exercicios-das-aulas/013 - CSS com SASS/009 - Funcoes/sass/scss/style.scss */
 ul li a:hover, ul li a.active {
-  background: rgba(0, 0, 255, 0.5);
+  background: #0000cc;
 }
+
+/*# sourceMappingURL=style.css.map */
