@@ -34,28 +34,28 @@ const lowerCase2 = (name) => name.toUpperCase();
 // Destructuring (Desestruturação)
 
 // Não desestruturado
-function handleMouse(event) {
+function handleMouse1(event) {
   const x = event.clientX;
   const y = event.clientY;
   console.log(x, y);
 }
 
 // Desestruturado
-function handleMouse(event) {
+function handleMouse2(event) {
   const { clientX, clientY } = event;
   console.log('X:', clientX, 'Y:', clientY);
 }
 
-function handleMouse({ event }) {
+function handleMouse3({ event }) {
   const { clientX, clientY } = event;
   console.log('X:', clientX, 'Y:', clientY);
 }
 
-function handleMouse({ clientX, clientY }) {
+function handleMouse4({ clientX, clientY }) {
   console.log('X:', clientX, 'Y:', clientY);
 }
 
-document.addEventListener('click', handleMouse);
+document.addEventListener('click', handleMouse4);
 
 // --------------------------------------
 // Destructuring Array (Desestruturação de Array)
@@ -120,6 +120,6 @@ const carro = {
   portas: 4,
 };
 
-carroAno = { ...carro, ano: 2008 };
+const carroAno = { ...carro, ano: 2008 };
 
-console.log(ano);
+console.log(carroAno);
